@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>WLM US - Upload</title>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Upload a media file for Wiki Loves Monuments 2016 in the United States.">
+		<meta name="keywords" content="wlm, wiki, loves, monuments, 2016, upload">
+		<meta name="author" content="Kevin Payravi">
+		
+		<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wiki_Loves_Monuments_2016_in_the_United_States_-_Logo_%28blank%29.svg/254px-Wiki_Loves_Monuments_2016_in_the_United_States_-_Logo_%28blank%29.svg.png" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<div style="width: 100%; text-align: center; padding-top: 30px;">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Wiki_Loves_Monuments_2016_in_the_United_States_-_Logo_%28text%29.svg/250px-Wiki_Loves_Monuments_2016_in_the_United_States_-_Logo_%28text%29.svg.png" alt="Wiki Loves Monuments 2016 in the United States">
+			<h3>Thanks for participating in Wiki Loves Monuments!</h3>
+
+			<h3>To help organize photos by type, please select the upload button that applies to your photo:</h3>
+			
+			<br><br>
+			
+			<h2>Are you uploading a National Register of Historic Places (NRHP) photo?</h2>
+			<a class="button" href="https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-us"><span style="color: white;">Submit Your Photo Here!</span></a>
+			
+			<br><br><br>
+			
+			<h2>Otherwise, select the state that your photo's subject is in:</h2>
+			<form>
+				<select id="selectState">
+					<option value="us-al">Alabama</option>
+					<option value="us-ak">Alaska</option>
+					<option value="us-az">Arizona</option>
+					<option value="us-ar">Arkansas</option>
+					<option value="us-ca">California</option>
+					<option value="us-co">Colorado</option>
+					<option value="us-ct">Connecticut</option>
+					<option value="us-de">Delaware</option>
+					<option value="us-fl">Florida</option>
+					<option value="us-ga">Georgia</option>
+					<option value="us-hi">Hawaii</option>
+					<option value="us-id">Idaho</option>
+					<option value="us-il">Illinois</option>
+					<option value="us-in">Indiana</option>
+					<option value="us-ia">Iowa</option>
+					<option value="us-ks">Kansas</option>
+					<option value="us-ky">Kentucky</option>
+					<option value="us-la">Louisiana</option>
+					<option value="us-me">Maine</option>
+					<option value="us-md">Maryland</option>
+					<option value="us-ma">Massachusetts</option>
+					<option value="us-mi">Michigan</option>
+					<option value="us-mn">Minnesota</option>
+					<option value="us-ms">Mississippi</option>
+					<option value="us-mo">Missouri</option>
+					<option value="us-mt">Montana</option>
+					<option value="us-ne">Nebraska</option>
+					<option value="us-nv">Nevada</option>
+					<option value="us-nh">New Hampshire</option>
+					<option value="us-nj">New Jersey</option>
+					<option value="us-nm">New Mexico</option>
+					<option value="us-ny">New York</option>
+					<option value="us-nc">North Carolina</option>
+					<option value="us-nd">North Dakota</option>
+					<option value="us-oh">Ohio</option>
+					<option value="us-ok">Oklahoma</option>
+					<option value="us-or">Oregon</option>
+					<option value="us-pa">Pennsylvania</option>
+					<option value="us-ri">Rhode Island</option>
+					<option value="us-sc">South Carolina</option>
+					<option value="us-sd">South Dakota</option>
+					<option value="us-tn">Tennessee</option>
+					<option value="us-tx">Texas</option>
+					<option value="us-ut">Utah</option>
+					<option value="us-vt">Vermont</option>
+					<option value="us-va">Virginia</option>
+					<option value="us-wa">Washington</option>
+					<option value="us-wv">West Virginia</option>
+					<option value="us-wi">Wisconsin</option>
+					<option value="us-wy">Wyoming</option>
+					<option value="us-gu">Guam</option>
+					<option value="us-pr">Puerto Rico</option>
+					<option value="us-vi">Virgin Islands</option>
+				</select>
+				<br>
+				<a class="button" onClick="navigate()"><span style="color: white;">Submit Your Photo Here!</span></a>
+			</form>
+			
+			<script>
+				function navigate() {
+					var selectedOption = document.getElementById("selectState");
+					var selectedValue = selectedOption.options[selectedOption.selectedIndex].value;
+					window.location.href = 'https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-' + selectedValue;
+				}
+			</script>
+			
+			<br>
+		</div>
+	</body>
+</html>
+	
