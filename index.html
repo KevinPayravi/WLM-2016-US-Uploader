@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -24,6 +25,7 @@
 			<br>
 			
 			<h2>Are you uploading a National Register of Historic Places (NRHP) photo?</h2>
+			<h3>Find your site using the <a href="http://npgallery.nps.gov/nrhp">NRHP Database</a>; when uploading, please provide only the reference number (e.g. 12345678) when asked.</h3>
 			<form>
 				<select id="selectState">
 					<option value="Alabama">Alabama</option>
@@ -157,12 +159,12 @@
 			
 			<h2>Is your territory not available in the list above?</h2>
 			<a class="button" href="https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-us-other"><span style="color: white;">Submit Your Photo Here!</span></a>
-
+			<br><br><br>
 			<script>
 				function navigate() {
 					var selectedOption = document.getElementById("selectState");
 					var selectedValue = selectedOption.options[selectedOption.selectedIndex].value;
-					window.location.href = 'https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-us&categories=Images_from_Wiki_Loves_Monuments_2016_in_' + selectedValue + '|National_Register_of_Historic_Places';
+					window.location.href = 'https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-us&categories=Images_from_Wiki_Loves_Monuments_2016_in_' + selectedValue;
 				}
 				
 				function navigate2() {
@@ -171,8 +173,6 @@
 					window.location.href = 'https://commons.wikimedia.org/w/index.php?title=Special:UploadWizard&campaign=wlm-us-other&categories=Images_from_Wiki_Loves_Monuments_2016_in_' + selectedValue;
 				}
 			</script>
-			
-			<br>
 		</div>
 	</body>
 </html>
